@@ -2,7 +2,7 @@
 
 RHS version of the Bohemia Interactive Warlords Altis multiplayer mission.
 
-The goal is to create a the best RHS version of the Bohemia Interactive Warlords missions.
+The goal is to create the best RHS version of the Bohemia Interactive Warlords missions.
 
 ### Prerequisites
 
