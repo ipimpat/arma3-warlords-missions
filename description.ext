@@ -1,0 +1,861 @@
+#include "\A3\Missions_F_Warlords\cfgMissionParams.inc"
+
+onLoadMission = $STR_A3_WL_modRules;
+onLoadName = "Warlords (RHS)";
+loadScreen = "A3\Data_F_Warlords\data\wl_logo_ca.paa";
+overviewPicture = "A3\Data_F_Warlords\data\wl_logo_ca.paa";
+overviewText = $STR_A3_WL_modRules;
+dev = "Kim Henriksen";
+author = "Kim Henriksen";
+respawn = "BASE";
+respawnDelay = 20;
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+wreckManagerMode = 1;
+wreckLimit = 10;
+wreckRemovalMinTime = 30;
+wreckRemovalMaxTime = 60;
+minPlayerDistance = 50;
+
+WLAIRequisitonBlacklist[] = {
+	"rhsusf_army_ucp_crewman",
+	"rhsusf_army_ucp_helipilot",
+	"rhsusf_army_ucp_ah64_pilot",
+	"rhsusf_airforce_pilot",
+	"rhsusf_airforce_jetpilot",
+	"rhs_pilot_transport_heli",
+	"rhs_pilot_combat_heli",
+	"rhs_pilot"
+};
+
+disabledAI = 0;
+
+class Header
+{
+	gameType = Warlords;
+	minPlayers = 1;
+	maxPlayers = 48;
+};
+
+class CfgWLRequisitionPresets
+{
+	class RHSDefaultAll
+	{
+		class WEST
+		{
+			class Infantry
+			{
+				class rhsusf_army_ucp_rifleman
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_crewman
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_helipilot
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_ah64_pilot
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_airforce_pilot
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_airforce_jetpilot
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_grenadier
+				{
+					cost=125;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_medic
+				{
+					cost=125;
+					requirements[]={};
+				};				
+				class rhsusf_army_ucp_autoriflemana
+				{
+					cost=125;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_autorifleman
+				{
+					cost=150;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_marksman
+				{
+					cost=150;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_machinegunnera
+				{
+					cost=175;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_machinegunner
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_engineer
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_maaws
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_javelin_assistant
+				{
+					cost=275;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_javelin
+				{
+					cost=300;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_aa
+				{
+					cost=300;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_sniper
+				{
+					cost=300;
+					requirements[]={};
+				};
+				class rhsusf_army_ucp_sniper_m107
+				{
+					cost=300;
+					requirements[]={};
+				};
+			};
+			class Vehicles
+			{
+				class B_Quadbike_01_F
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhsusf_mrzr4_d
+				{
+					cost=350;
+					requirements[]={};
+				};
+				class rhsusf_m1240a1_usarmy_wd
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class rhsusf_M977A4_usarmy_wd
+				{
+					cost=650;
+					requirements[]={};
+				};
+				class rhsusf_M978A4_usarmy_wd
+				{
+					cost=750;
+					requirements[]={};
+				};
+				class rhsusf_m113_usarmy_medical
+				{
+					cost=750;
+					requirements[]={};
+				};
+				class rhsusf_m1025_w_m2
+				{
+					cost=1000;
+					requirements[]={};
+				};
+				class rhsusf_m1045_w
+				{
+					cost=1250;
+					requirements[]={};
+				};
+				class rhsusf_m1240a1_m2crows_usarmy_wd
+				{
+					cost=1400;
+					requirements[]={};
+				};
+				class rhsusf_M977A4_REPAIR_usarmy_wd
+				{
+					cost=1500;
+					requirements[]={};
+				};
+				class rhsusf_m1240a1_mk19crows_usarmy_wd
+				{
+					cost=1600;
+					requirements[]={};
+				};
+				class rhsusf_M977A4_AMMO_usarmy_wd
+				{
+					cost=3000;
+					requirements[]={};
+				};
+				class rhsusf_stryker_m1134_wd
+				{
+					cost=3000;
+					requirements[]={};
+				};
+				class RHS_M2A3_wd
+				{
+					cost=3500;
+					requirements[]={};
+				};
+				class RHS_M6_wd
+				{
+					cost=4000;
+					requirements[]={};
+				};
+				class rhsusf_m1a1aimwd_usarmy
+				{
+					cost=5000;
+					requirements[]={};
+				};
+				class rhsusf_m1a1aim_tuski_wd
+				{
+					cost=5500;
+					requirements[]={};
+				};
+				class rhsusf_m1a2sep1wd_usarmy
+				{
+					cost=7000;
+					requirements[]={};
+				};
+				class rhsusf_m1a2sep1tuskiiwd_usarmy
+				{
+					cost=7500;
+					requirements[]={};
+				};
+			};
+			class Aircraft
+			{
+				class RHS_MELB_MH6M
+				{
+					cost=1000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_MELB_AH6M
+				{
+					cost=2500;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_UH60M
+				{
+					cost=3000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_CH_47F_cargo
+				{
+					cost=4500;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_AH64D_wd
+				{
+					cost=6000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_C130J_Cargo
+				{
+					cost=9000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_A10
+				{
+					cost=10500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+				class rhsusf_f22
+				{
+					cost=13500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+			};
+			class Naval
+			{
+				class rhsgref_hidf_canoe
+				{
+					cost=100;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+				class rhsgref_hidf_assault_boat
+				{
+					cost=100;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+				class rhsgref_hidf_rhib
+				{
+					cost=750;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+				class rhsusf_mkvsoc
+				{
+					cost=900;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+			};
+			class Gear
+			{
+				class rhsusf_mags_crate
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhsusf_weapon_crate
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class rhsusf_launcher_crate
+				{
+					cost=300;
+					requirements[]={};
+				};
+			};
+			class Defences
+			{
+				class rhsusf_army_ucp_rifleman
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class RHS_M2StaticMG_WD
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class RHS_MK19_TriPod_WD
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class RHS_Stinger_AA_pod_WD
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class RHS_TOW_TriPod_WD
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class B_SAM_System_03_F
+				{
+					cost=27500;
+					requirements[]={};
+					offset[]={0,5.3000002,0};
+				};
+				class B_Radar_System_01_F
+				{
+					cost=8500;
+					requirements[]={};
+					offset[]={0,5.3000002,0};
+				};
+			};
+		};
+		class EAST
+		{
+			class Infantry
+			{
+				class rhs_msv_rifleman
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_msv_crew
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_pilot_transport_heli
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_pilot_combat_heli
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_pilot
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_msv_grenadier
+				{
+					cost=125;
+					requirements[]={};
+				};
+				class rhs_msv_medic
+				{
+					cost=125;
+					requirements[]={};
+				};
+				class rhs_msv_arifleman
+				{
+					cost=150;
+					requirements[]={};
+				};
+				class rhs_msv_machinegunner_assistant
+				{
+					cost=150;
+					requirements[]={};
+				};
+				class rhs_msv_marksman
+				{
+					cost=150;
+					requirements[]={};
+				};
+				class rhs_msv_engineer
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhs_msv_machinegunner
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhs_msv_strelok_rpg_assist
+				{
+					cost=225;
+					requirements[]={};
+				};
+				class rhs_msv_grenadier_rpg
+				{
+					cost=250;
+					requirements[]={};
+				};
+                class rhs_msv_LAT
+				{
+					cost=300;
+					requirements[]={};
+				};
+				class rhs_msv_at
+				{
+					cost=300;
+					requirements[]={};
+				};
+				class rhs_msv_aa
+				{
+					cost=300;
+					requirements[]={};
+				};
+			};
+			class Vehicles
+			{
+				class O_Quadbike_01_F
+				{
+					cost=100;
+					requirements[]={};
+				};
+				class rhs_uaz_open_MSV_01
+				{
+					cost=350;
+					requirements[]={};
+				};
+				class rhsgref_BRDM2UM_msv
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class rhs_kamaz5350_msv
+				{
+					cost=650;
+					requirements[]={};
+				};
+				class RHS_Ural_Fuel_MSV_01
+				{
+					cost=750;
+					requirements[]={};
+				};
+				class rhsgref_ins_uaz_dshkm
+				{
+					cost=1000;
+					requirements[]={};
+				};
+				class rhsgref_ins_uaz_spg9
+				{
+					cost=1250;
+					requirements[]={};
+				};
+				class RHS_Ural_Zu23_MSV_01
+				{
+					cost=1250;
+					requirements[]={};
+				};
+				class rhsgref_BRDM2_msv
+				{
+					cost=1400;
+					requirements[]={};
+				};
+				class RHS_Ural_Repair_MSV_01
+				{
+					cost=1500;
+					requirements[]={};
+				};
+				class rhsgref_BRDM2_ATGM_msv
+				{
+					cost=1600;
+					requirements[]={};
+				};
+				class rhs_gaz66_ammo_msv
+				{
+					cost=3000;
+					requirements[]={};
+				};
+				class rhs_btr80a_msv
+				{
+					cost=3000;
+					requirements[]={};
+				};
+				class rhs_bmp2d_msv
+				{
+					cost=3500;
+					requirements[]={};
+				};
+				class rhs_zsu234_aa
+				{
+					cost=4000;
+					requirements[]={};
+				};
+				class rhs_t72be_tv
+				{
+					cost=5500;
+					requirements[]={};
+				};
+				class rhs_t80um
+				{
+					cost=6500;
+					requirements[]={};
+				};
+				class rhs_t90sm_tv
+				{
+					cost=7500;
+					requirements[]={};
+				};
+				class rhs_t14_tv
+				{
+					cost=8500;
+					requirements[]={};
+				};
+			};
+			class Aircraft
+			{
+				class rhs_ka60_c
+				{
+					cost=1500;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Mi8T_vvsc
+				{
+					cost=2500;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Mi8AMTSh_vvsc
+				{
+					cost=2750;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Mi8mtv3_Cargo_vvsc
+				{
+					cost=3000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Mi24V_vvsc
+				{
+					cost=6000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Ka52_vvsc
+				{
+					cost=7000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class rhs_mi28n_vvsc
+				{
+					cost=7000;
+					requirements[]=
+					{
+						"H"
+					};
+				};
+				class RHS_Su25SM_vvs
+				{
+					cost=10500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+				class rhs_mig29sm_vvs
+				{
+					cost=13500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+				class RHS_T50_vvs_blueonblue
+				{
+					cost=13500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+				class RHS_TU95MS_vvs_old
+				{
+					cost=27500;
+					requirements[]=
+					{
+						"A"
+					};
+				};
+			};
+			class Naval
+			{
+				class O_Boat_Transport_01_F
+				{
+					cost=100;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+				class rhs_bmk_t
+				{
+					cost=750;
+					requirements[]=
+					{
+						"W"
+					};
+				};
+			};
+			class Gear
+			{
+				class rhs_mags_crate
+				{
+					cost=200;
+					requirements[]={};
+				};
+				class rhs_weapon_crate
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class rhs_launcher_crate
+				{
+					cost=300;
+					requirements[]={};
+				};
+			};
+			class Defences
+			{
+				class RHS_NSV_TriPod_MSV
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class rhs_KORD_MSV
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class rhs_KORD_high_MSV
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class RHS_AGS30_TriPod_MSV
+				{
+					cost=250;
+					requirements[]={};
+				};
+				class RHS_ZU23_MSV
+				{
+					cost=500;
+					requirements[]={};
+				};				
+				class rhs_Igla_AA_pod_msv
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class rhs_SPG9M_MSV
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class rhs_Kornet_9M133_2_msv
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class rhs_Metis_9k115_2_msv
+				{
+					cost=500;
+					requirements[]={};
+				};
+				class O_SAM_System_04_F
+				{
+					cost=27500;
+					requirements[]={};
+					offset[]={0,5.3000002,0};
+				};
+				class O_Radar_System_02_F
+				{
+					cost=8500;
+					requirements[]={};
+					offset[]={0,5.3000002,0};
+				};
+			};
+		};
+	};
+};
+
+class CfgWLFactionAssets
+{
+	class WEST
+	{
+		class InfantryUnits
+		{
+			class rhsusf_army_ucp_rifleman {};
+			class rhsusf_army_ucp_grenadier {};
+			class rhsusf_army_ucp_medic {};
+			class rhsusf_army_ucp_autoriflemana {};
+			class rhsusf_army_ucp_autorifleman {};
+			class rhsusf_army_ucp_marksman {};
+			class rhsusf_army_ucp_machinegunnera {};
+			class rhsusf_army_ucp_machinegunner {};
+			class rhsusf_army_ucp_engineer {};
+			class rhsusf_army_ucp_maaws {};
+			class rhsusf_army_ucp_javelin_assistant {};
+			class rhsusf_army_ucp_javelin {};
+			class rhsusf_army_ucp_aa {};
+			class rhsusf_army_ucp_sniper {};
+			class rhsusf_army_ucp_sniper_m107 {};
+		};
+	};
+	class EAST
+	{
+		class InfantryUnits
+		{
+			class rhs_msv_rifleman {};
+            class rhs_msv_grenadier {};
+			class rhs_msv_medic {};
+			class rhs_msv_arifleman {};
+			class rhs_msv_machinegunner_assistant {};
+			class rhs_msv_marksman {};
+			class rhs_msv_engineer {};
+			class rhs_msv_machinegunner {};
+			class rhs_msv_strelok_rpg_assist {};
+			class rhs_msv_grenadier_rpg {};
+			class rhs_msv_LAT {};
+			class rhs_msv_at {};
+			class rhs_msv_aa {};
+		};
+	};
+	class INDEP
+	{
+		class InfantryGroups
+		{
+			groups[] = {
+                "'Indep' >> 'rhsgref_faction_cdf_ground' >> 'rhsgref_group_cdf_reg_infantry' >> 'rhsgref_group_cdf_reg_infantry_squad'",
+                "'Indep' >> 'rhsgref_faction_cdf_ground' >> 'rhsgref_group_cdf_reg_infantry' >> 'rhsgref_group_cdf_reg_infantry_squad_weap'"
+			};
+		};
+		class MotorizedGroups
+		{
+			groups[] = {
+
+			};
+		};
+		class MechanizedGroups
+		{
+			groups[] = {
+
+			};
+		};
+		class ArmoredGroups
+		{
+			groups[] = {
+				
+			};
+		};
+	};
+};
