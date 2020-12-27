@@ -16,7 +16,7 @@ No additional mods required.
 
 ### Install
 
-fixme
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2338234827)
 
 ## Contributing
 
