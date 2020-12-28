@@ -176,11 +176,6 @@ class CfgWLRequisitionPresets
 					cost=750;
 					requirements[]={};
 				};
-				class rhsusf_m113_usarmy_medical
-				{
-					cost=750;
-					requirements[]={};
-				};
 				class rhsusf_m1025_w_m2
 				{
 					cost=1000;
