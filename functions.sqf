@@ -1,7 +1,5 @@
 fnc_WLArsenalFilter = {
 
-    [ "Preload" ] call BIS_fnc_arsenal;
-
     {
         _arsenal_data = _x;
 
@@ -12,7 +10,7 @@ fnc_WLArsenalFilter = {
                 _arsenal_data = _arsenal_data - [ _blacklisted ];
             };
 
-        } forEach WL_arsenal_filter;
+        } forEach WL_blacklist;
 
         BIS_fnc_arsenal_data set [ _forEachIndex, _arsenal_data ];
 

@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1464;
+		nextID=1465;
 	};
 	class LayerIndexProvider
 	{
-		nextID=160;
+		nextID=163;
 	};
 	class Camera
 	{
 		pos[]={3707.854,29.147053,10363.933};
-		dir[]={0.74247932,-0.27342197,-0.61153555};
-		up[]={0.21104255,0.96189696,-0.17382361};
-		aside[]={-0.63576066,-4.5630441e-007,-0.77189338};
+		dir[]={0.76547223,-0.29343107,-0.57268196};
+		up[]={0.2349458,0.9559834,-0.17577359};
+		aside[]={-0.59905159,-5.0294329e-007,-0.80072075};
 	};
 };
 binarizationWanted=0;
@@ -158,7 +158,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=512;
+		items=513;
 		class Item0
 		{
 			dataType="Trigger";
@@ -33046,6 +33046,13 @@ class Mission
 			};
 			id=250;
 			type="EmptyDetector";
+		};
+		class Item512
+		{
+			dataType="Layer";
+			name="Layer 163";
+			id=1464;
+			atlOffset=185.97;
 		};
 	};
 	class Connections

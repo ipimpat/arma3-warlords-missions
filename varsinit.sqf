@@ -1694,15 +1694,13 @@ WL_blacklist_attachments = [
 
 ];
 
-WL_arsenal_filter = WL_blacklist_weapons + 
+WL_blacklist = WL_blacklist_weapons + 
 			   WL_blacklist_backpacks + 
 			   WL_blacklist_magazines +
 			   WL_blacklist_vests +
 			   WL_blacklist_binoculars +
 			   WL_blacklist_misc +
-			   WL_blacklist_goggles;
-
-WL_blacklist = WL_arsenal_filter +
+			   WL_blacklist_goggles +
                WL_blacklist_uniforms + 
 			   WL_blacklist_headgear +
 			   WL_blacklist_attachments;

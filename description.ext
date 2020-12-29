@@ -860,14 +860,6 @@ class CfgWLRequisitionPresets
 						"W"
 					};
 				};
-				class rhs_bmk_t
-				{
-					cost=750;
-					requirements[]=
-					{
-						"W"
-					};
-				};
 			};
 			class Gear
 			{
