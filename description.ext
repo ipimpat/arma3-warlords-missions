@@ -161,9 +161,19 @@ class CfgWLRequisitionPresets
 					cost=350;
 					requirements[]={};
 				};
+				class rhsusf_m1043_w
+				{
+					cost=450;
+					requirements[]={};
+				};
 				class rhsusf_m1240a1_usarmy_wd
 				{
 					cost=500;
+					requirements[]={};
+				};
+				class rhsusf_m113_usarmy_unarmed
+				{
+					cost=650;
 					requirements[]={};
 				};
 				class rhsusf_M977A4_usarmy_wd
@@ -181,12 +191,17 @@ class CfgWLRequisitionPresets
 					cost=1000;
 					requirements[]={};
 				};
-				class rhsusf_m1045_w
+				class rhsusf_m966_w
 				{
 					cost=1250;
 					requirements[]={};
 				};
 				class rhsusf_m1240a1_m2crows_usarmy_wd
+				{
+					cost=1400;
+					requirements[]={};
+				};
+				class rhsusf_m113_usarmy_M240
 				{
 					cost=1400;
 					requirements[]={};
@@ -201,17 +216,32 @@ class CfgWLRequisitionPresets
 					cost=1600;
 					requirements[]={};
 				};
+				class rhsusf_m113_usarmy_MK19
+				{
+					cost=1600;
+					requirements[]={};
+				};
 				class rhsusf_M977A4_AMMO_usarmy_wd
 				{
 					cost=3000;
 					requirements[]={};
 				};
-				class rhsusf_stryker_m1134_wd
+				class rhsusf_stryker_m1126_m2_wd
 				{
 					cost=3000;
 					requirements[]={};
 				};
-				class RHS_M2A3_wd
+				class rhsusf_stryker_m1126_mk19_wd
+				{
+					cost=3000;
+					requirements[]={};
+				};
+				class rhsusf_stryker_m1132_m2_wd
+				{
+					cost=3500;
+					requirements[]={};
+				};
+				class rhsusf_stryker_m1134_wd
 				{
 					cost=3500;
 					requirements[]={};
@@ -221,24 +251,34 @@ class CfgWLRequisitionPresets
 					cost=4000;
 					requirements[]={};
 				};
-				class rhsusf_m1a1aimwd_usarmy
+				class RHS_M2A3_wd
 				{
-					cost=5000;
+					cost=4500;
 					requirements[]={};
 				};
-				class rhsusf_m1a1aim_tuski_wd
+				class RHS_M2A3_BUSKI_wd
 				{
-					cost=5500;
+					cost=4500;
+					requirements[]={};
+				};
+				class RHS_M2A3_BUSKIII_wd
+				{
+					cost=4750;
 					requirements[]={};
 				};
 				class rhsusf_m1a2sep1wd_usarmy
 				{
-					cost=7000;
+					cost=5000;
+					requirements[]={};
+				};
+				class rhsusf_m1a2sep1tuskiwd_usarmy
+				{
+					cost=5500;
 					requirements[]={};
 				};
 				class rhsusf_m1a2sep1tuskiiwd_usarmy
 				{
-					cost=7500;
+					cost=6000;
 					requirements[]={};
 				};
 			};
@@ -500,67 +540,72 @@ class CfgWLRequisitionPresets
 					cost=100;
 					requirements[]={};
 				};
-				class rhs_uaz_open_MSV_01
+				class rhs_uaz_open_vdv
 				{
 					cost=350;
 					requirements[]={};
 				};
-				class rhsgref_BRDM2UM_msv
+				class rhs_tigr_vdv
+				{
+					cost=450;
+					requirements[]={};
+				};
+				class rhsgref_BRDM2UM_vdv
 				{
 					cost=500;
 					requirements[]={};
 				};
-				class rhs_kamaz5350_msv
+				class RHS_Ural_VDV_01
 				{
 					cost=650;
 					requirements[]={};
 				};
-				class RHS_Ural_Fuel_MSV_01
+				class RHS_Ural_Fuel_VDV_01
 				{
 					cost=750;
 					requirements[]={};
 				};
-				class rhsgref_ins_uaz_dshkm
+				class rhs_tigr_sts_vdv
 				{
 					cost=1000;
 					requirements[]={};
 				};
-				class rhsgref_ins_uaz_spg9
-				{
-					cost=1250;
-					requirements[]={};
-				};
-				class RHS_Ural_Zu23_MSV_01
-				{
-					cost=1250;
-					requirements[]={};
-				};
-				class rhsgref_BRDM2_msv
+				class rhsgref_BRDM2_vdv
 				{
 					cost=1400;
 					requirements[]={};
 				};
-				class RHS_Ural_Repair_MSV_01
+				class RHS_Ural_Repair_VDV_01
 				{
 					cost=1500;
 					requirements[]={};
 				};
-				class rhsgref_BRDM2_ATGM_msv
+				class rhsgref_BRDM2_ATGM_vdv
 				{
 					cost=1600;
 					requirements[]={};
 				};
-				class rhs_gaz66_ammo_msv
+				class rhs_gaz66_ammo_vdv
 				{
 					cost=3000;
 					requirements[]={};
 				};
-				class rhs_btr80a_msv
+				class rhs_btr60_vdv
 				{
 					cost=3000;
 					requirements[]={};
 				};
-				class rhs_bmp2d_msv
+				class rhs_btr70_vdv
+				{
+					cost=3150;
+					requirements[]={};
+				};
+				class rhs_btr80_vdv
+				{
+					cost=3250;
+					requirements[]={};
+				};
+				class rhs_btr80a_vdv
 				{
 					cost=3500;
 					requirements[]={};
@@ -570,24 +615,59 @@ class CfgWLRequisitionPresets
 					cost=4000;
 					requirements[]={};
 				};
+				class rhs_bmd1
+				{
+					cost=4500;
+					requirements[]={};
+				};
+				class rhs_bmd1r
+				{
+					cost=4500;
+					requirements[]={};
+				};
+				class rhs_bmd2m
+				{
+					cost=4500;
+					requirements[]={};
+				};
+				class rhs_brm1k_vdv
+				{
+					cost=4500;
+					requirements[]={};
+				};
+				class rhs_bmd4m_vdv
+				{
+					cost=5000;
+					requirements[]={};
+				};
+				class rhs_bmp2k_vdv
+				{
+					cost=5000;
+					requirements[]={};
+				};
 				class rhs_t72be_tv
+				{
+					cost=5000;
+					requirements[]={};
+				};
+				class rhs_t80uk
 				{
 					cost=5500;
 					requirements[]={};
 				};
-				class rhs_t80um
+				class rhs_t90sab_tv
 				{
-					cost=6500;
+					cost=6000;
 					requirements[]={};
 				};
-				class rhs_t90sm_tv
+				class rhs_sprut_vdv
 				{
-					cost=7500;
+					cost=7000;
 					requirements[]={};
 				};
 				class rhs_t14_tv
 				{
-					cost=8500;
+					cost=7500;
 					requirements[]={};
 				};
 			};
