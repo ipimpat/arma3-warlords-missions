@@ -41,6 +41,20 @@
 					player removeWeapon _x;
 				};
 			} forEach weapons player;
+
+			// Remove blacklisted primary weapon items
+			{
+				if (_x in WL_blacklist) then {
+					player removePrimaryWeaponItem _x;
+				};
+			} forEach primaryWeaponItems player;
+
+			// Remove blacklisted secondary weapon items
+			{
+				if (_x in WL_blacklist) then {
+					player removeSecondaryWeaponItem _x;
+				};
+			} forEach secondaryWeaponItems player;
 		
 			// Remove blacklisted stored items
 			{
