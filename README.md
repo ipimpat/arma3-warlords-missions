@@ -11,6 +11,7 @@ Required Workshop content:
 * [RHS: USAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
 * [RHS: AFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
 * [RHS: GREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
+* [RE: RHS Escalation](https://steamcommunity.com/sharedfiles/filedetails/?id=2188015838)
 
 No additional mods required.
 
