@@ -842,14 +842,6 @@ class CfgWLRequisitionPresets
 						"A"
 					};
 				};
-				class RHS_TU95MS_vvs_old
-				{
-					cost=18000;
-					requirements[]=
-					{
-						"A"
-					};
-				};
 			};
 			class Naval
 			{
