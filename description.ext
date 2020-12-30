@@ -26,6 +26,7 @@ WLAIRequisitonBlacklist[] = {
 	"rhsusf_army_ucp_ah64_pilot",
 	"rhsusf_airforce_pilot",
 	"rhsusf_airforce_jetpilot",
+	"rhs_vdv_crew",
 	"rhs_pilot_transport_heli",
 	"rhs_pilot_combat_heli",
 	"rhs_pilot"
@@ -527,12 +528,12 @@ class CfgWLRequisitionPresets
 		{
 			class Infantry
 			{
-				class rhs_msv_rifleman
+				class rhs_vdv_rifleman
 				{
 					cost=100;
 					requirements[]={};
 				};
-				class rhs_msv_crew
+				class rhs_vdv_crew
 				{
 					cost=100;
 					requirements[]={};
@@ -552,62 +553,62 @@ class CfgWLRequisitionPresets
 					cost=100;
 					requirements[]={};
 				};
-				class rhs_msv_grenadier
+				class rhs_vdv_grenadier
 				{
 					cost=125;
 					requirements[]={};
 				};
-				class rhs_msv_medic
+				class rhs_vdv_medic
 				{
 					cost=125;
 					requirements[]={};
 				};
-				class rhs_msv_arifleman
+				class rhs_vdv_arifleman
 				{
 					cost=150;
 					requirements[]={};
 				};
-				class rhs_msv_machinegunner_assistant
+				class rhs_vdv_machinegunner_assistant
 				{
 					cost=150;
 					requirements[]={};
 				};
-				class rhs_msv_marksman
+				class rhs_vdv_marksman
 				{
 					cost=150;
 					requirements[]={};
 				};
-				class rhs_msv_engineer
+				class rhs_vdv_engineer
 				{
 					cost=200;
 					requirements[]={};
 				};
-				class rhs_msv_machinegunner
+				class rhs_vdv_machinegunner
 				{
 					cost=200;
 					requirements[]={};
 				};
-				class rhs_msv_strelok_rpg_assist
+				class rhs_vdv_strelok_rpg_assist
 				{
 					cost=225;
 					requirements[]={};
 				};
-				class rhs_msv_grenadier_rpg
+				class rhs_vdv_grenadier_rpg
 				{
 					cost=250;
 					requirements[]={};
 				};
-                class rhs_msv_LAT
+                class rhs_vdv_LAT
 				{
 					cost=300;
 					requirements[]={};
 				};
-				class rhs_msv_at
+				class rhs_vdv_at
 				{
 					cost=300;
 					requirements[]={};
 				};
-				class rhs_msv_aa
+				class rhs_vdv_aa
 				{
 					cost=300;
 					requirements[]={};
@@ -970,19 +971,19 @@ class CfgWLFactionAssets
 	{
 		class InfantryUnits
 		{
-			class rhs_msv_rifleman {};
-            class rhs_msv_grenadier {};
-			class rhs_msv_medic {};
-			class rhs_msv_arifleman {};
-			class rhs_msv_machinegunner_assistant {};
-			class rhs_msv_marksman {};
-			class rhs_msv_engineer {};
-			class rhs_msv_machinegunner {};
-			class rhs_msv_strelok_rpg_assist {};
-			class rhs_msv_grenadier_rpg {};
-			class rhs_msv_LAT {};
-			class rhs_msv_at {};
-			class rhs_msv_aa {};
+			class rhs_vdv_rifleman {};
+            class rhs_vdv_grenadier {};
+			class rhs_vdv_medic {};
+			class rhs_vdv_arifleman {};
+			class rhs_vdv_machinegunner_assistant {};
+			class rhs_vdv_marksman {};
+			class rhs_vdv_engineer {};
+			class rhs_vdv_machinegunner {};
+			class rhs_vdv_strelok_rpg_assist {};
+			class rhs_vdv_grenadier_rpg {};
+			class rhs_vdv_LAT {};
+			class rhs_vdv_at {};
+			class rhs_vdv_aa {};
 		};
 	};
 	class INDEP
