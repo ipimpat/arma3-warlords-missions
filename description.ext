@@ -746,11 +746,6 @@ class CfgWLRequisitionPresets
 					cost=7000;
 					requirements[]={};
 				};
-				class rhs_t14_tv
-				{
-					cost=7500;
-					requirements[]={};
-				};
 			};
 			class Aircraft
 			{
