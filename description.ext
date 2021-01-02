@@ -485,15 +485,11 @@ class CfgWLRequisitionPresets
 			};
 			class Defences
 			{
-				class rhsusf_army_ucp_rifleman
-				{
-					cost=250;
-					requirements[]={};
-				};
 				class RHS_M2StaticMG_WD
 				{
 					cost=250;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class RHS_MK19_TriPod_WD
 				{
@@ -504,11 +500,13 @@ class CfgWLRequisitionPresets
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class RHS_TOW_TriPod_WD
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class B_SAM_System_03_F
 				{
@@ -873,46 +871,55 @@ class CfgWLRequisitionPresets
 				{
 					cost=250;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class rhs_KORD_MSV
 				{
 					cost=250;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class rhs_KORD_high_MSV
 				{
 					cost=250;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class RHS_AGS30_TriPod_MSV
 				{
 					cost=250;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class RHS_ZU23_MSV
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,3.3000002,0};
 				};				
 				class rhs_Igla_AA_pod_msv
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class rhs_SPG9M_MSV
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class rhs_Kornet_9M133_2_msv
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class rhs_Metis_9k115_2_msv
 				{
 					cost=500;
 					requirements[]={};
+					offset[]={0,2.3000002,0};
 				};
 				class O_SAM_System_04_F
 				{
